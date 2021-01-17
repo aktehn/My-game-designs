@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script defer src="1.js"></script>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body class="body-bg">
+    <div id="content">
+        <div id="buttons">
+            <button class="btn btn-dark btn-lg" type="button" id="startButton" onclick="setGame()">Start</button>
+            <button class="btn btn-dark btn-lg" type="button" id="restartButton"
+                onclick="restartGame()">Restart</button>
+        </div>
+        <canvas id="canvas" width="800" height="800" style="border: 2px solid black; border-radius: 5px;"></canvas>
+        <h4>Highest score : <span id="highestScore" class="badge badge-dark">0</span></h4>
+    </div>
+    <div class="display-4 text-dark" id="score">0</div>
+</body>
+
+</html>
